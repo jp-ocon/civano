@@ -2,46 +2,46 @@
 title: leaflet
 header-include: |-
   <script src="https://github.com/jp-ocon/civano/tree/master/docs/Civano_files/htmlwidgets-1.5.1/htmlwidgets.js"></script>
-  <script src="Civano_files/jquery-1.12.4/jquery.min.js"></script>
-  <link href="Civano_files/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
-  <script src="Civano_files/leaflet-1.3.1/leaflet.js"></script>
-  <link href="Civano_files/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
-  <script src="Civano_files/Proj4Leaflet-1.0.1/proj4-compressed.js"></script>
-  <script src="Civano_files/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
-  <link href="Civano_files/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
-  <script src="Civano_files/leaflet-binding-2.0.3/leaflet.js"></script>
-  <script src="Civano_files/leaflet-providers-1.9.0/leaflet-providers_1.9.0.js"></script>
-  <script src="Civano_files/leaflet-providers-plugin-2.0.3/leaflet-providers-plugin.js"></script>
-  <script src="Civano_files/popup-0.0.1/popup.js"></script>
-  <link id="image-1-InS_LAM.tiff_-attachment" rel="attachment" href="Civano_files/image-0.0.1/1-InS_LAM.tiff_.jpeg"/>
-  <link id="image-10-InS_LAM.tiff_-attachment" rel="attachment" href="Civano_files/image-0.0.1/10-InS_LAM.tiff_.jpeg"/>
-  <link id="image-11-InS_LAM.tiff_-attachment" rel="attachment" href="Civano_files/image-0.0.1/11-InS_LAM.tiff_.jpeg"/>
-  <link id="image-12-InS_LAM.tiff_-attachment" rel="attachment" href="Civano_files/image-0.0.1/12-InS_LAM.tiff_.jpeg"/>
-  <link id="image-2-InS_LAM.tiff_-attachment" rel="attachment" href="Civano_files/image-0.0.1/2-InS_LAM.tiff_.jpeg"/>
-  <link id="image-24-InS_LAM.tiff_-attachment" rel="attachment" href="Civano_files/image-0.0.1/24-InS_LAM.tiff_.jpeg"/>
-  <link id="image-25-InS_LAM.tiff_-attachment" rel="attachment" href="Civano_files/image-0.0.1/25-InS_LAM.tiff_.jpeg"/>
-  <link id="image-26-InS_LAM.tiff_-attachment" rel="attachment" href="Civano_files/image-0.0.1/26-InS_LAM.tiff_.jpeg"/>
-  <link id="image-3-InS_LAM.tiff_-attachment" rel="attachment" href="Civano_files/image-0.0.1/3-InS_LAM.tiff_.jpeg"/>
-  <link id="image-31-InS_LAM.tiff_-attachment" rel="attachment" href="Civano_files/image-0.0.1/31-InS_LAM.tiff_.jpeg"/>
-  <link id="image-33-InS_LAM.tiff_-attachment" rel="attachment" href="Civano_files/image-0.0.1/33-InS_LAM.tiff_.jpeg"/>
-  <link id="image-34-InS_LAM.tiff_-attachment" rel="attachment" href="Civano_files/image-0.0.1/34-InS_LAM.tiff_.jpeg"/>
-  <link id="image-35-InS_LAM.tiff_-attachment" rel="attachment" href="Civano_files/image-0.0.1/35-InS_LAM.tiff_.jpeg"/>
-  <link id="image-4-InS_LAM.tiff_-attachment" rel="attachment" href="Civano_files/image-0.0.1/4-InS_LAM.tiff_.jpeg"/>
-  <link id="image-42-InS_LAM.tiff_-attachment" rel="attachment" href="Civano_files/image-0.0.1/42-InS_LAM.tiff_.jpeg"/>
-  <link id="image-42.5-InS_LAM.tiff_-attachment" rel="attachment" href="Civano_files/image-0.0.1/42.5-InS_LAM.tiff_.jpeg"/>
-  <link id="image-43-InS_LAM.tiff_-attachment" rel="attachment" href="Civano_files/image-0.0.1/43-InS_LAM.tiff_.jpeg"/>
-  <link id="image-5-InS_LAM.tiff_-attachment" rel="attachment" href="Civano_files/image-0.0.1/5-InS_LAM.tiff_.jpeg"/>
-  <link id="image-50-InS_LAM.tiff_-attachment" rel="attachment" href="Civano_files/image-0.0.1/50-InS_LAM.tiff_.jpeg"/>
-  <link id="image-6-InS_LAM.tiff_-attachment" rel="attachment" href="Civano_files/image-0.0.1/6-InS_LAM.tiff_.jpeg"/>
-  <link id="image-6.5-InS_LAM.tiff_-attachment" rel="attachment" href="Civano_files/image-0.0.1/6.5-InS_LAM.tiff_.jpeg"/>
-  <link id="image-7-InS_LAM.tiff_-attachment" rel="attachment" href="Civano_files/image-0.0.1/7-InS_LAM.tiff_.jpeg"/>
-  <link id="image-8-InS_LAM.tiff_-attachment" rel="attachment" href="Civano_files/image-0.0.1/8-InS_LAM.tiff_.jpeg"/>
-  <link id="image-9-InS_LAM.tiff_-attachment" rel="attachment" href="Civano_files/image-0.0.1/9-InS_LAM.tiff_.jpeg"/>
-  <link id="image-9.5-InS_LAM.tiff_-attachment" rel="attachment" href="Civano_files/image-0.0.1/9.5-InS_LAM.tiff_.jpeg"/>
-  <link id="image-Center of Civano-Air_MRT.tiff_-attachment" rel="attachment" href="Civano_files/image-0.0.1/Center%20of%20Civano-Air_MRT.tiff_.jpeg"/>
-  <link id="image-Lee's Backyard-Air_MRT.tiff_-attachment" rel="attachment" href="Civano_files/image-0.0.1/Lee%27s%20Backyard-Air_MRT.tiff_.jpeg"/>
-  <link id="image-Mesquite Ranch Wash-Air_MRT.tiff_-attachment" rel="attachment" href="Civano_files/image-0.0.1/Mesquite%20Ranch%20Wash-Air_MRT.tiff_.jpeg"/>
-  <link id="image-Site 33 Desert-Air_MRT.tiff_-attachment" rel="attachment" href="Civano_files/image-0.0.1/Site%2033%20Desert-Air_MRT.tiff_.jpeg"/>
+  <script src="https://github.com/jp-ocon/civano/tree/master/docs/Civano_files/jquery-1.12.4/jquery.min.js"></script>
+  <link href="https://github.com/jp-ocon/civano/tree/master/docs/Civano_files/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+  <script src="https://github.com/jp-ocon/civano/tree/master/docs/Civano_files/leaflet-1.3.1/leaflet.js"></script>
+  <link href="https://github.com/jp-ocon/civano/tree/master/docs/Civano_files/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+  <script src="https://github.com/jp-ocon/civano/tree/master/docs/Civano_files/Proj4Leaflet-1.0.1/proj4-compressed.js"></script>
+  <script src="https://github.com/jp-ocon/civano/tree/master/docs/Civano_files/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+  <link href="https://github.com/jp-ocon/civano/tree/master/docs/Civano_files/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+  <script src="https://github.com/jp-ocon/civano/tree/master/docs/Civano_files/leaflet-binding-2.0.3/leaflet.js"></script>
+  <script src="https://github.com/jp-ocon/civano/tree/master/docs/Civano_files/leaflet-providers-1.9.0/leaflet-providers_1.9.0.js"></script>
+  <script src="https://github.com/jp-ocon/civano/tree/master/docs/Civano_files/leaflet-providers-plugin-2.0.3/leaflet-providers-plugin.js"></script>
+  <script src="https://github.com/jp-ocon/civano/tree/master/docs/Civano_files/popup-0.0.1/popup.js"></script>
+  <link id="image-1-InS_LAM.tiff_-attachment" rel="attachment" href="https://github.com/jp-ocon/civano/tree/master/docs/Civano_files/image-0.0.1/1-InS_LAM.tiff_.jpeg"/>
+  <link id="image-10-InS_LAM.tiff_-attachment" rel="attachment" href="https://github.com/jp-ocon/civano/tree/master/docs/Civano_files/image-0.0.1/10-InS_LAM.tiff_.jpeg"/>
+  <link id="image-11-InS_LAM.tiff_-attachment" rel="attachment" href="https://github.com/jp-ocon/civano/tree/master/docs/Civano_files/image-0.0.1/11-InS_LAM.tiff_.jpeg"/>
+  <link id="image-12-InS_LAM.tiff_-attachment" rel="attachment" href="https://github.com/jp-ocon/civano/tree/master/docs/Civano_files/image-0.0.1/12-InS_LAM.tiff_.jpeg"/>
+  <link id="image-2-InS_LAM.tiff_-attachment" rel="attachment" href="https://github.com/jp-ocon/civano/tree/master/docs/Civano_files/image-0.0.1/2-InS_LAM.tiff_.jpeg"/>
+  <link id="image-24-InS_LAM.tiff_-attachment" rel="attachment" href="https://github.com/jp-ocon/civano/tree/master/docs/Civano_files/image-0.0.1/24-InS_LAM.tiff_.jpeg"/>
+  <link id="image-25-InS_LAM.tiff_-attachment" rel="attachment" href="https://github.com/jp-ocon/civano/tree/master/docs/Civano_files/image-0.0.1/25-InS_LAM.tiff_.jpeg"/>
+  <link id="image-26-InS_LAM.tiff_-attachment" rel="attachment" href="https://github.com/jp-ocon/civano/tree/master/docs/Civano_files/image-0.0.1/26-InS_LAM.tiff_.jpeg"/>
+  <link id="image-3-InS_LAM.tiff_-attachment" rel="attachment" href="https://github.com/jp-ocon/civano/tree/master/docs/Civano_files/image-0.0.1/3-InS_LAM.tiff_.jpeg"/>
+  <link id="image-31-InS_LAM.tiff_-attachment" rel="attachment" href="https://github.com/jp-ocon/civano/tree/master/docs/Civano_files/image-0.0.1/31-InS_LAM.tiff_.jpeg"/>
+  <link id="image-33-InS_LAM.tiff_-attachment" rel="attachment" href="https://github.com/jp-ocon/civano/tree/master/docs/Civano_files/image-0.0.1/33-InS_LAM.tiff_.jpeg"/>
+  <link id="image-34-InS_LAM.tiff_-attachment" rel="attachment" href="https://github.com/jp-ocon/civano/tree/master/docs/Civano_files/image-0.0.1/34-InS_LAM.tiff_.jpeg"/>
+  <link id="image-35-InS_LAM.tiff_-attachment" rel="attachment" href="https://github.com/jp-ocon/civano/tree/master/docs/Civano_files/image-0.0.1/35-InS_LAM.tiff_.jpeg"/>
+  <link id="image-4-InS_LAM.tiff_-attachment" rel="attachment" href="https://github.com/jp-ocon/civano/tree/master/docs/Civano_files/image-0.0.1/4-InS_LAM.tiff_.jpeg"/>
+  <link id="image-42-InS_LAM.tiff_-attachment" rel="attachment" href="https://github.com/jp-ocon/civano/tree/master/docs/Civano_files/image-0.0.1/42-InS_LAM.tiff_.jpeg"/>
+  <link id="image-42.5-InS_LAM.tiff_-attachment" rel="attachment" href="https://github.com/jp-ocon/civano/tree/master/docs/Civano_files/image-0.0.1/42.5-InS_LAM.tiff_.jpeg"/>
+  <link id="image-43-InS_LAM.tiff_-attachment" rel="attachment" href="https://github.com/jp-ocon/civano/tree/master/docs/Civano_files/image-0.0.1/43-InS_LAM.tiff_.jpeg"/>
+  <link id="image-5-InS_LAM.tiff_-attachment" rel="attachment" href="https://github.com/jp-ocon/civano/tree/master/docs/Civano_files/image-0.0.1/5-InS_LAM.tiff_.jpeg"/>
+  <link id="image-50-InS_LAM.tiff_-attachment" rel="attachment" href="https://github.com/jp-ocon/civano/tree/master/docs/Civano_files/image-0.0.1/50-InS_LAM.tiff_.jpeg"/>
+  <link id="image-6-InS_LAM.tiff_-attachment" rel="attachment" href="https://github.com/jp-ocon/civano/tree/master/docs/Civano_files/image-0.0.1/6-InS_LAM.tiff_.jpeg"/>
+  <link id="image-6.5-InS_LAM.tiff_-attachment" rel="attachment" href="https://github.com/jp-ocon/civano/tree/master/docs/Civano_files/image-0.0.1/6.5-InS_LAM.tiff_.jpeg"/>
+  <link id="image-7-InS_LAM.tiff_-attachment" rel="attachment" href="https://github.com/jp-ocon/civano/tree/master/docs/Civano_files/image-0.0.1/7-InS_LAM.tiff_.jpeg"/>
+  <link id="image-8-InS_LAM.tiff_-attachment" rel="attachment" href="https://github.com/jp-ocon/civano/tree/master/docs/Civano_files/image-0.0.1/8-InS_LAM.tiff_.jpeg"/>
+  <link id="image-9-InS_LAM.tiff_-attachment" rel="attachment" href="https://github.com/jp-ocon/civano/tree/master/docs/Civano_files/image-0.0.1/9-InS_LAM.tiff_.jpeg"/>
+  <link id="image-9.5-InS_LAM.tiff_-attachment" rel="attachment" href="https://github.com/jp-ocon/civano/tree/master/docs/Civano_files/image-0.0.1/9.5-InS_LAM.tiff_.jpeg"/>
+  <link id="image-Center of Civano-Air_MRT.tiff_-attachment" rel="attachment" href="https://github.com/jp-ocon/civano/tree/master/docs/Civano_files/image-0.0.1/Center%20of%20Civano-Air_MRT.tiff_.jpeg"/>
+  <link id="image-Lee's Backyard-Air_MRT.tiff_-attachment" rel="attachment" href="https://github.com/jp-ocon/civano/tree/master/docs/Civano_files/image-0.0.1/Lee%27s%20Backyard-Air_MRT.tiff_.jpeg"/>
+  <link id="image-Mesquite Ranch Wash-Air_MRT.tiff_-attachment" rel="attachment" href="https://github.com/jp-ocon/civano/tree/master/docs/Civano_files/image-0.0.1/Mesquite%20Ranch%20Wash-Air_MRT.tiff_.jpeg"/>
+  <link id="image-Site 33 Desert-Air_MRT.tiff_-attachment" rel="attachment" href="https://github.com/jp-ocon/civano/tree/master/docs/Civano_files/image-0.0.1/Site%2033%20Desert-Air_MRT.tiff_.jpeg"/>
 head: ''
 background-color: white
 
